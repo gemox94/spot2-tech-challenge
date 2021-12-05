@@ -39,7 +39,7 @@ class PostalCodeTest extends TestCase
 
     /**
      * Test retrieve zip code returns status code 200 and validate
-     * that contains "status": true
+     * that contains "status": false
      *
      * @return void
      */
