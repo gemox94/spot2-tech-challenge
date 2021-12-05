@@ -24,10 +24,6 @@ class PostalCodeSeeder extends Seeder
         $postalCodes = [];
         while (($data = fgetcsv($file, 1000, ",")) !== FALSE) {
 
-            if ($counter == 20) {
-                break;
-            }
-
             if ($counter >= 1) {
                 $state = $data[4];
 
