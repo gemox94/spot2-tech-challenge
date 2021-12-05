@@ -21,7 +21,7 @@ Route::prefix('v1')->group(function() {
     /**
      * Zip (postal) code URLs
      */
-    Route::prefix('postal-codes')->group(function() {
+    Route::prefix('zip-code')->group(function() {
         Route::get('/', [PostalCodeController::class, 'list']);
         Route::get('/{postalCodeId}', [PostalCodeController::class, 'retrieve']);
     });
