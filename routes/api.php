@@ -18,6 +18,12 @@ use App\Http\Controllers\API\v1\PostalCodeController;
 
 Route::prefix('v1')->group(function() {
 
-    Route::get('/postal-codes', [PostalCodeController::class, 'list']);
+    /**
+     * Zip (postal) code URLs
+     */
+    Route::prefix('postal-codes')->group(function() {
+        Route::get('/', [PostalCodeController::class, 'list']);
+        Route::get('/{postalCodeId}', [PostalCodeController::class, 'retrieve']);
+    });
 
 });
