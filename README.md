@@ -4,6 +4,20 @@
 Tech challenge for Spot2. The objective is to create a basic API of ZIP Codes where the user will request
 a zip code and a list of settlements will be returned.
 
+## Endpoints
+The following are the available endpoints for this challenge:
+
+### List zip codes
+**GET:** `/api/v1/zip-code`
+
+### Retrieve zip code
+**GET:** `/api/v1/zip-code/{zipCodeId}`
+
+## Live Test
+Here you can find the deployed project:
+
+https://spot2api.gmoxca.com/api/v1/zip-code
+
 ## Initial Setup
 * Create a DB
 * Set up environment variables, you can use `.env.example` file as starting point
